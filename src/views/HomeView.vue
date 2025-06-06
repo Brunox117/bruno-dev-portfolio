@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import ReactLogo from '@/assets/svgs/ReactLogo.vue';
 import CoursesComponent from '@/components/CoursesComponent.vue';
 import ExperienceComponent from '@/components/ExperienceComponent.vue';
 import IntroComponent from '@/components/IntroComponent.vue';
-import LanguagesCarousel from '@/components/LanguagesCarousel.vue';
 import ProjectsComponent from '@/components/ProjectsComponent.vue';
 </script>
 

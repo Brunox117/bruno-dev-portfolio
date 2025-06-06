@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import TagComponent from './TagComponent.vue';
+</script>
+
 <template>
   <!-- Sección 3: Proyectos -->
   <section id="projects" class="py-20">
@@ -11,15 +15,9 @@
           <h3 class="text-2xl font-bold mb-4 text-blue-400 font-mono">Punto de venta</h3>
           <p class="text-gray-400 mb-6">Prueba de concepto de landing page para Punto de Venta</p>
           <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-slate-700 text-blue-300 text-sm font-mono px-3 py-1 rounded-full"
-              >React</span
-            >
-            <span class="bg-slate-700 text-blue-300 text-sm font-mono px-3 py-1 rounded-full"
-              >Firebase</span
-            >
-            <span class="bg-slate-700 text-blue-300 text-sm font-mono px-3 py-1 rounded-full"
-              >Tailwindcss</span
-            >
+            <TagComponent name="React" />
+            <TagComponent name="Firebase" />
+            <TagComponent name="Tailwind" />
           </div>
           <div class="flex space-x-4">
             <a
@@ -36,7 +34,7 @@
         <div class="card-content relative">
           <div class="flex justify-between items-center mb-4">
             <h3 class="text-2xl font-bold text-blue-400 font-mono">Carreer mode tracker</h3>
-            <span class="bg-slate-700 text-yellow-300 text-sm font-mono px-3 py-1 rounded-full"
+            <span class="bg-blue-400/10 text-yellow-300 text-sm font-mono px-3 py-1 rounded-full"
               >En construcción</span
             >
           </div>
@@ -46,9 +44,7 @@
             Riverpod, GoRouter, etc.
           </p>
           <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-slate-700 text-blue-300 text-sm font-mono px-3 py-1 rounded-full"
-              >Flutter</span
-            >
+            <TagComponent name="Flutter" />
           </div>
           <div class="flex space-x-4">
             <!-- <a

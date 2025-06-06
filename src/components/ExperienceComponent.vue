@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import TagComponent from './TagComponent.vue';
+
+const currentJobTech = ['Flutter', 'JS', 'Springboot', 'PHP', 'CSS', 'Git', 'HTML'];
+
+const volunteerTech = ['React', 'Firebase'];
+
+const amazonTech = ['React'];
+</script>
+
 <template>
   <!-- Sección 2: Experiencia Laboral -->
   <section id="experience" class="py-20">
@@ -13,7 +23,7 @@
         <div class="mb-12">
           <h3 class="text-2xl font-bold text-blue-400 font-mono">Software developer</h3>
           <p class="font-semibold text-gray-400 mb-2">Red TS Advanced Systems | 2024 - Presente</p>
-          <ul class="list-disc list-inside text-gray-400 space-y-2">
+          <ul class="list-disc list-inside text-gray-400 space-y-2 mb-4">
             <li>
               Encargado de desarrollar nuevas funcionalidades y corregir bugs para las aplicaciones
               de Team Mexico, GasoMex y Tarjeta Joven
@@ -23,6 +33,9 @@
               descuentos y oportunidades a la juventud de México
             </li>
           </ul>
+          <div class="flex flex-wrap gap-2">
+            <TagComponent v-for="tech in currentJobTech" :key="tech" :name="tech" />
+          </div>
         </div>
 
         <!-- Punto en la línea de tiempo -->
@@ -34,29 +47,35 @@
           <p class="font-semibold text-gray-400 mb-2">
             Municipio de Atizapán | Febrero - Junio 2023
           </p>
-          <ul class="list-disc list-inside text-gray-400 space-y-2">
+          <ul class="list-disc list-inside text-gray-400 space-y-2 mb-4">
             <li>
               Encargado de desarrollar un CRM obteniendo información de APIs y almacenandolas en la
               nube.
             </li>
           </ul>
+          <div class="flex flex-wrap gap-2">
+            <TagComponent v-for="tech in volunteerTech" :key="tech" :name="tech" />
+          </div>
         </div>
 
         <!-- Punto en la línea de tiempo -->
         <div class="absolute -left-1.5 top-[calc(50%)] w-3 h-3 bg-blue-400 rounded-full"></div>
 
-        <!-- Experiencia 2 -->
+        <!-- Experiencia 3 -->
         <div class="mb-12">
           <h3 class="text-2xl font-bold text-blue-400 font-mono">
             Frontend developer, practicas profesionales
           </h3>
           <p class="font-semibold text-gray-400 mb-2">Amazon | Febrero - Junio 2021</p>
-          <ul class="list-disc list-inside text-gray-400 space-y-2">
+          <ul class="list-disc list-inside text-gray-400 space-y-2 mb-4">
             <li>
               Parte del equipo de frontend desarrollando una plataforma que conecta expertos con
               consumidores.
             </li>
           </ul>
+          <div class="flex flex-wrap gap-2">
+            <TagComponent v-for="tech in amazonTech" :key="tech" :name="tech" />
+          </div>
         </div>
       </div>
     </div>

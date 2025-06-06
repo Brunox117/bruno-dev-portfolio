@@ -74,8 +74,12 @@ onMounted(() => {
     <!-- Menú Móvil -->
     <div ref="mobileMenu" id="mobile-menu" class="hidden md:hidden px-6 pb-4">
       <a href="#home" class="block py-2 text-gray-300 hover:text-blue-400">Inicio</a>
+      <a href="#experience" class="block py-2 text-gray-300 hover:text-blue-400">Experiencia</a>
       <a href="#projects" class="block py-2 text-gray-300 hover:text-blue-400">Proyectos</a>
-      <a href="#courses" class="block py-2 text-gray-300 hover:text-blue-400">Cursos</a>
+      <a href="#courses" class="block py-2 text-gray-300 hover:text-blue-400">Formación</a>
+      <a href="mailto:omarjm0910@icloud.com" class="block py-2 text-gray-300 hover:text-blue-400"
+        >Contáctame</a
+      >
     </div>
   </header>
 </template>
