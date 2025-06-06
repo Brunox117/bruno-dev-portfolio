@@ -37,6 +37,9 @@ onMounted(() => {
       >
       <nav class="hidden md:flex space-x-8">
         <a href="#home" class="text-gray-300 hover:text-blue-400 transition-colors">Inicio</a>
+        <a href="#experience" class="text-gray-300 hover:text-blue-400 transition-colors"
+          >Experiencia</a
+        >
         <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors"
           >Proyectos</a
         >
