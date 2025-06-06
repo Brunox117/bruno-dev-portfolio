@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 
-const mobileMenu = ref(null);
-const mobileMenuButton = ref(null);
+const mobileMenu = ref<HTMLElement | null>(null);
+const mobileMenuButton = ref<HTMLButtonElement | null>(null);
 
 onMounted(() => {
   // Script para el menú móvil
@@ -20,7 +20,7 @@ onMounted(() => {
   // Actualizar año en el footer
   const yearElement = document.getElementById('year');
   if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
+    yearElement.textContent = new Date().getFullYear().toString();
   }
 });
 </script>
