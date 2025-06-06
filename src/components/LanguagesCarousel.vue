@@ -17,6 +17,38 @@ const baseLogos = [
   { component: GitLogo, name: 'Git' },
   { component: DartLogo, name: 'Dart' },
 ];
+
+// Duplicate the logos array to create a seamless loop
+const carouselLogos = [...baseLogos, ...baseLogos];
+
+const carouselRef = ref<HTMLElement | null>(null);
+const scrollInterval = ref<number | null>(null);
+const scrollSpeed = 2; // Increased speed for better visibility
+
+const startInfiniteScroll = () => {
+  if (!carouselRef.value) return;
+
+  scrollInterval.value = window.setInterval(() => {
+    if (!carouselRef.value) return;
+
+    carouselRef.value.scrollLeft += scrollSpeed;
+
+    // Reset scroll position when reaching the middle
+    if (carouselRef.value.scrollLeft >= carouselRef.value.scrollWidth / 2) {
+      carouselRef.value.scrollLeft = 0;
+    }
+  }, 20); // Reduced interval for smoother animation
+};
+
+onMounted(() => {
+  startInfiniteScroll();
+});
+
+onUnmounted(() => {
+  if (scrollInterval.value) {
+    clearInterval(scrollInterval.value);
+  }
+});
 </script>
 
 <template>
@@ -37,7 +69,7 @@ const baseLogos = [
       class="flex space-x-8 py-4 overflow-x-auto scrollbar-hide"
       style="scroll-behavior: smooth"
     >
-      <div v-for="(logo, index) in baseLogos" :key="index" class="flex-shrink-0">
+      <div v-for="(logo, index) in carouselLogos" :key="index" class="flex-shrink-0">
         <component :is="logo.component" />
       </div>
     </div>

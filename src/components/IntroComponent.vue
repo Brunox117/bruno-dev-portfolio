@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import LanguagesCarousel from './LanguagesCarousel.vue';
+</script>
+
 <template>
   <!-- Sección 1: Home -->
   <section class="min-h-[80vh] flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">

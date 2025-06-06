@@ -3,9 +3,9 @@ import TagComponent from './TagComponent.vue';
 
 const currentJobTech = ['Flutter', 'JS', 'Springboot', 'PHP', 'CSS', 'Git', 'HTML'];
 
-const volunteerTech = ['React', 'Firebase'];
+const volunteerTech = ['React', 'Firebase', 'Git'];
 
-const amazonTech = ['React'];
+const amazonTech = ['React', 'Git'];
 </script>
 
 <template>
