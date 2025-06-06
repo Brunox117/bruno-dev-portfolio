@@ -5,9 +5,9 @@ import LanguagesCarousel from '@/components/LanguagesCarousel.vue';
 
 <template>
   <body class="bg-slate-900 text-gray-300">
-    <main class="container mx-auto px-6 pt-24">
+    <main id="home" class="container mx-auto px-6 pt-24">
       <!-- Sección 1: Home -->
-      <section id="home" class="min-h-80 flex items-center justify-center text-center">
+      <section class="min-h-80 flex items-center justify-center text-center">
         <div class="max-w-3xl">
           <h1 class="text-5xl md:text-7xl font-bold mb-4">
             Hola, soy <span class="text-blue-400">[Bruno]</span>
@@ -25,7 +25,7 @@ import LanguagesCarousel from '@/components/LanguagesCarousel.vue';
           </p>
           <div class="flex justify-center space-x-6">
             <a
-              href="[Tu URL de LinkedIn]"
+              href="www.linkedin.com/in/bruno-omar-jiménez-mancilla-22b14117a"
               target="_blank"
               class="text-gray-400 hover:text-blue-400 transition-colors"
             >
@@ -38,7 +38,7 @@ import LanguagesCarousel from '@/components/LanguagesCarousel.vue';
               </svg>
             </a>
             <a
-              href="[Tu URL de GitHub]"
+              href="https://github.com/Brunox117"
               target="_blank"
               class="text-gray-400 hover:text-blue-400 transition-colors"
             >
@@ -83,15 +83,38 @@ import LanguagesCarousel from '@/components/LanguagesCarousel.vue';
             </div>
 
             <!-- Punto en la línea de tiempo -->
+            <div class="absolute -left-1.5 top-1 w-3 h-3 bg-blue-400 rounded-full"></div>
+
+            <!-- Experiencia 2 -->
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold text-blue-400 font-mono">
+                Full Stack Developer Volunteer
+              </h3>
+              <p class="font-semibold text-gray-400 mb-2">
+                Municipio de Atizápan | Febrero - Junio 2023
+              </p>
+              <ul class="list-disc list-inside text-gray-400 space-y-2">
+                <li>
+                  Encargado de desarrollar un CRM obteniendo información de APIs y almacenandolas en
+                  la nube.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Punto en la línea de tiempo -->
             <div class="absolute -left-1.5 top-[calc(50%)] w-3 h-3 bg-blue-400 rounded-full"></div>
 
             <!-- Experiencia 2 -->
             <div class="mb-12">
-              <h3 class="text-2xl font-bold text-blue-400 font-mono">Puesto Anterior</h3>
-              <p class="font-semibold text-gray-400 mb-2">Otra Empresa | Mes Año - Mes Año</p>
+              <h3 class="text-2xl font-bold text-blue-400 font-mono">
+                Frontend developer, practicas profesionales
+              </h3>
+              <p class="font-semibold text-gray-400 mb-2">Amazon | Febrero - Junio 2021</p>
               <ul class="list-disc list-inside text-gray-400 space-y-2">
-                <li>Colaboré en un equipo ágil para diseñar nuevas funcionalidades.</li>
-                <li>Resolví bugs críticos y mejoré la estabilidad general de la aplicación.</li>
+                <li>
+                  Parte del equipo de frontend desarrollando una plataforma que conecta expertos con
+                  consumidores.
+                </li>
               </ul>
             </div>
           </div>
