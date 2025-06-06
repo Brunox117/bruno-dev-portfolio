@@ -32,7 +32,7 @@
         <div class="mb-12">
           <h3 class="text-2xl font-bold text-blue-400 font-mono">Full Stack Developer Volunteer</h3>
           <p class="font-semibold text-gray-400 mb-2">
-            Municipio de Atizápan | Febrero - Junio 2023
+            Municipio de Atizapán | Febrero - Junio 2023
           </p>
           <ul class="list-disc list-inside text-gray-400 space-y-2">
             <li>

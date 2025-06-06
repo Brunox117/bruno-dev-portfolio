@@ -43,7 +43,12 @@ onMounted(() => {
         <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors"
           >Proyectos</a
         >
-        <a href="#courses" class="text-gray-300 hover:text-blue-400 transition-colors">Cursos</a>
+        <a href="#courses" class="text-gray-300 hover:text-blue-400 transition-colors">Formación</a>
+        <a
+          href="mailto:omarjm0910@icloud.com"
+          class="text-gray-300 hover:text-blue-400 transition-colors"
+          >Contáctame</a
+        >
       </nav>
       <button
         ref="mobileMenuButton"
