@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Estilos personalizados para aplicar las fuentes y el tema */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a; /* bg-slate-900 */
+  color: #d1d5db; /* text-gray-300 */
+}
+
+/* Aplicamos la fuente mono a los elementos con la clase card-tech */
+.font-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Efecto de borde con gradiente para las tarjetas */
+.card-border-gradient {
+  position: relative;
+  background: #1e293b; /* bg-slate-800 */
+  border-radius: 0.5rem; /* rounded-lg */
+  overflow: hidden;
+  z-index: 1;
+}
+.card-border-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: conic-gradient(from 180deg at 50% 50%, #2563eb 0deg, #38bdf8 180deg, #2563eb 360deg);
+  z-index: -1;
+  transform: scale(1.02);
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-border-gradient:hover::before {
+  opacity: 1;
+}
+/* Contenedor interno para que el contenido no se vea afectado por el borde */
+.card-content {
+  background: #1e293b; /* bg-slate-800 */
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem; /* p-6 */
+}

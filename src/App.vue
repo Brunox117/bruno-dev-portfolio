@@ -1,53 +1,11 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterView } from 'vue-router';
+import HeaderComponent from './components/HeaderComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 </script>
 
 <template>
-  <!-- Header y Navegación -->
-  <header
-    class="bg-slate-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-slate-700"
-  >
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a
-        href="#home"
-        class="text-2xl font-bold font-mono text-blue-400 hover:text-blue-300 transition-colors"
-        >Bruno Jiménez</a
-      >
-      <nav class="hidden md:flex space-x-8">
-        <a href="#home" class="text-gray-300 hover:text-blue-400 transition-colors">Inicio</a>
-        <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors"
-          >Proyectos</a
-        >
-        <a href="#courses" class="text-gray-300 hover:text-blue-400 transition-colors">Cursos</a>
-      </nav>
-      <button
-        ref="mobileMenuButton"
-        id="mobile-menu-button"
-        class="md:hidden text-gray-300 focus:outline-none"
-      >
-        <svg
-          class="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          ></path>
-        </svg>
-      </button>
-    </div>
-    <!-- Menú Móvil -->
-    <div ref="mobileMenu" id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-      <a href="#home" class="block py-2 text-gray-300 hover:text-blue-400">Inicio</a>
-      <a href="#projects" class="block py-2 text-gray-300 hover:text-blue-400">Proyectos</a>
-      <a href="#courses" class="block py-2 text-gray-300 hover:text-blue-400">Cursos</a>
-    </div>
-  </header>
-
+  <HeaderComponent />
   <RouterView />
+  <FooterComponent />
 </template>
